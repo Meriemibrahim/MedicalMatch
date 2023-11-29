@@ -4,7 +4,7 @@
 set -e
 
 # Install Composer dependencies
-composer install --no-dev --optimize-autoloader
+./bin/composer install --no-dev --optimize-autoloader
 
 
 
