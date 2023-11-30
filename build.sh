@@ -4,7 +4,8 @@
 set -e
 
 # Install Composer dependencies
-./bin/composer install --no-dev --optimize-autoloader
+scoop install symfony-cli
+composer install --no-dev --optimize-autoloader
 
 
 
