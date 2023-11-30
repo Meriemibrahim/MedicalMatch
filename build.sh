@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Set environment variables
+export MY_CUSTOM_VARIABLE="Hello, World!"
+
+# Install PHP
+apt-get update
+apt-get install -y php
+
 # Download and install Composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
