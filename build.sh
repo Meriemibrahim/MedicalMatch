@@ -4,7 +4,6 @@
 export MY_CUSTOM_VARIABLE="Hello, World!"
 
 # Install PHP
-apt-get update
 apt-get install -y php
 
 # Download and install Composer
