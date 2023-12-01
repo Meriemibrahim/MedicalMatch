@@ -24,6 +24,7 @@ RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony*/cli /usr/local/bin/symfony
+RUN composer require symfony/runtime
 
 # Expose port 8000
 EXPOSE 8000
