@@ -32,6 +32,11 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031
 RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
+# Add Symfony to PATH
+RUN echo 'export PATH=$PATH:/var/www/html/bin' >> /root/.bashrc
+
+# Refresh the shell to apply changes
+RUN /bin/bash -c "source /root/.bashrc
 COPY . .
 # Expose port 80
 EXPOSE 8000
