@@ -15,7 +15,7 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache
 ENV APACHE_PID_FILE /var/run/apache.pid
-ENV APACHE_RUN_DIR /var/run/apache
+ENV APACHE_RUN_DIR /var/run/apache2
 
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -37,8 +37,8 @@ COPY . .
 EXPOSE 80
 
 # Configure Apache
-RUN sed -i 's/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/var\/www\/html\/public/' C:\xampp\apache\conf\httpd.config
-RUN sed -i 's/\<Directory \/var\/www\/html\>/\<Directory \/var\/www\/html\/public\>/g' C:\xampp\apache\conf\httpd.config
+RUN sed -i 's/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/var\/www\/html\/public/' /etc/apache/sites-available/000-default.conf
+RUN sed -i 's/\<Directory \/var\/www\/html\>/\<Directory \/var\/www\/html\/public\>/g' /etc/apache/sites-available/000-default.conf
 
 # Add Symfony binary directory to PATH
 ENV PATH="${PATH}:/var/www/html/bin"
