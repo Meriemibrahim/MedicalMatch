@@ -33,7 +33,7 @@ RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 # Add Symfony to PATH
-RUN echo 'export PATH=$PATH:/var/www/html/bin' >> /root/.bashrc
+ENV PATH="${PATH}:/var/www/html/bin"
 
 # Refresh the shell to apply changes
 RUN /bin/bash -c "source /root/.bashrc
