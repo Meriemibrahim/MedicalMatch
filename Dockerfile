@@ -1,8 +1,8 @@
 FROM php:8.3-apache
 
 # Set the working directory to /var/www/html
-WORKDIR /MEDICALMATCH
-COPY . .
+WORKDIR /var/www/html
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     libicu-dev \
@@ -34,11 +34,11 @@ RUN php composer-setup.php
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 # Add Symfony to PATH
 RUN export PATH="$HOME/.symfony5/bin:$PATH"
-RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 # Refresh the shell to apply changes
 COPY . .
+# Expose port 80
+EXPOSE 8000
 
-CMD ["Symfony", "serve"]
 
 # Add Symfony binary directory to PATH
 
