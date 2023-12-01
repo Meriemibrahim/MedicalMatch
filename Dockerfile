@@ -32,7 +32,6 @@ EXPOSE 80
 
 # Configure Apache
 RUN a2enmod rewrite
-COPY docker/vhost.conf /etc/apache2/sites-available/000-default.conf
 
 # Add Symfony binary directory to PATH
 ENV PATH="${PATH}:/var/www/html/bin"
