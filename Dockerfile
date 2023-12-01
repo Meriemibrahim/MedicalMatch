@@ -37,8 +37,7 @@ RUN export PATH="$HOME/.symfony5/bin:$PATH"
 RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 # Refresh the shell to apply changes
 COPY . .
-# Expose port 80
-EXPOSE 8000
+
 
 CMD [ "symfony" ,"serve"]
 # Add Symfony binary directory to PATH
