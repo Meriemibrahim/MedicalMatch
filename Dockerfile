@@ -24,10 +24,8 @@ RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 
-# Add Symfony to the system PATH
-ENV PATH="/usr/local/share/symfony:${PATH}"
-# Expose port 8000
+
 EXPOSE 8000
 
 # Command to run the application
-CMD ["sh", "-c", "symfony server:start --no-tls --port=8000"]
+CMD ["apache2-foreground"]
