@@ -23,7 +23,6 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031
 RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
-RUN mv /root/.symfony*/cli /usr/local/bin/symfony
 RUN composer require symfony/runtime
 
 # Expose port 8000
