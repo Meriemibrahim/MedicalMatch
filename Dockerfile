@@ -21,6 +21,7 @@ ENV APACHE_RUN_DIR /var/run/apache
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Set the working directory to /app
+COPY composer.json composer.lock ./
 
 
 # Update Symfony Flex version in composer.json
@@ -37,11 +38,8 @@ COPY . .
 EXPOSE 80
 
 # Configure Apache
-RUN (Get-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Raw) -replace 'DocumentRoot "/usr/local/apache2/htdocs"', 'DocumentRoot "/var/www/html/public"' | Set-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Force
-RUN (Get-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Raw) -replace '<Directory "C:/Apache24/htdocs">', '<Directory "/var/www/html/public">' | Set-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Force
-
-# Enable Apache modules
-RUN echo "LoadModule rewrite_module modules/mod_rewrite.so" >> 'C:\xampp\apache\conf\httpd.conf'
+RUN sed -i 's/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/var\/www\/html\/public/' C:\xampp\apache\conf\httpd.config
+RUN sed -i 's/\<Directory \/var\/www\/html\>/\<Directory \/var\/www\/html\/public\>/g' C:\xampp\apache\conf\httpd.config
 
 # Add Symfony binary directory to PATH
 ENV PATH="${PATH}:/var/www/html/bin"
