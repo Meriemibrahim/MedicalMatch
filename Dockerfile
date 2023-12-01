@@ -34,6 +34,7 @@ RUN php composer-setup.php
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 # Add Symfony to PATH
 RUN export PATH="$HOME/.symfony5/bin:$PATH"
+RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 # Refresh the shell to apply changes
 COPY . .
 # Expose port 80
