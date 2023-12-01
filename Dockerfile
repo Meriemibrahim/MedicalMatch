@@ -29,4 +29,4 @@ RUN composer require symfony/runtime
 EXPOSE 8000
 
 # Command to run the application
-CMD ["php", "bin/console", "server:run", "0.0.0.0:8000"]
+CMD ["symfony", "serve"]
