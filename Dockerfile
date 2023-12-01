@@ -1,7 +1,7 @@
 FROM php:8.3-apache
 
 # Set the working directory to /var/www/html
-WORKDIR /var/www/html
+WORKDIR /MEDICALMATCH
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -40,6 +40,6 @@ COPY . .
 # Expose port 80
 EXPOSE 8000
 
-
+CMD [ "symfony" ,"serve"]
 # Add Symfony binary directory to PATH
 
