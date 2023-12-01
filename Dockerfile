@@ -34,7 +34,7 @@ RUN php composer-setup.php
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 COPY . .
 # Expose port 80
-EXPOSE 80
+EXPOSE 8000
 
 
 # Add Symfony binary directory to PATH
