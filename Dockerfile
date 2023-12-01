@@ -23,7 +23,6 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031
 RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
-RUN mv .symfony /usr/local/share/
 
 # Add Symfony to the system PATH
 ENV PATH="/usr/local/share/symfony:${PATH}"
@@ -31,4 +30,4 @@ ENV PATH="/usr/local/share/symfony:${PATH}"
 EXPOSE 8000
 
 # Command to run the application
-CMD ["symfony", "serve"]
+CMD ["sh", "-c", "symfony server:start --no-tls --port=8000"]
