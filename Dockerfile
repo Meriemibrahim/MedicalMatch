@@ -1,18 +1,21 @@
-# Use the official PHP 7.2 CLI image as the base image
-FROM php:8.3-cli
+FROM php:8.3-apache
 
-# Update package lists and install libmcrypt-dev
-RUN apt-get update -y && \
-    apt-get install -y libmcrypt-dev
+# Set the working directory to /var/www/html
+WORKDIR /var/www/html
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libicu-dev \
+    zip \
+    unzip \
+    git
 
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Set the working directory to /app
-WORKDIR /app
+COPY composer.json composer.lock ./
 
-# Copy the current directory contents into the container at /app
-COPY . /app
 
 # Update Symfony Flex version in composer.json
 RUN echo '{"require": {"symfony/flex": "^2.4"}}' > composer.json
@@ -23,11 +26,13 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031
 RUN php composer-setup.php
 # Install Symfony
 RUN curl -sS https://get.symfony.com/cli/installer | bash
+COPY . .
+# Expose port 80
+EXPOSE 80
 
-# Add Symfony to the system PATH
-ENV PATH="/usr/local/share/symfony:${PATH}"
-# Expose port 8000
-EXPOSE 8000
+# Configure Apache
+RUN a2enmod rewrite
+COPY docker/vhost.conf /etc/apache2/sites-available/000-default.conf
 
-# Command to run the application
-
+# Add Symfony binary directory to PATH
+ENV PATH="${PATH}:/var/www/html/bin"
