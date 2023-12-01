@@ -21,7 +21,6 @@ ENV APACHE_RUN_DIR /var/run/apache
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Set the working directory to /app
-COPY composer.json composer.lock ./
 
 
 # Update Symfony Flex version in composer.json
