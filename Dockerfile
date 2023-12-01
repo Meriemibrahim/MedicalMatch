@@ -36,12 +36,10 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash
 ENV PATH="${PATH}:/var/www/html/bin"
 
 # Refresh the shell to apply changes
-RUN /bin/bash -c "source /root/.bashrc
 COPY . .
 # Expose port 80
 EXPOSE 8000
 
 
 # Add Symfony binary directory to PATH
-ENV PATH="${PATH}:/var/www/html/bin"
 
