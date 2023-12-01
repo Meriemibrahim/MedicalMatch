@@ -1,7 +1,8 @@
 FROM php:8.3-apache
 
 # Set the working directory to /var/www/html
-WORKDIR /MEDICALMATCH
+WORKDIR /MedicalMatch
+
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
