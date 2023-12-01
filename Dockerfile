@@ -10,12 +10,12 @@ RUN apt-get update && apt-get install -y \
     unzip \
     git
 
-ENV APACHE_RUN_DIR /var/run/apache2
+ENV APACHE_RUN_DIR /var/run/apache
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
-ENV APACHE_LOG_DIR /var/log/apache2
-ENV APACHE_PID_FILE /var/run/apache2.pid
-ENV APACHE_RUN_DIR /var/run/apache2
+ENV APACHE_LOG_DIR /var/log/apache
+ENV APACHE_PID_FILE /var/run/apache.pid
+ENV APACHE_RUN_DIR /var/run/apache
 
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -38,9 +38,11 @@ COPY . .
 EXPOSE 80
 
 # Configure Apache
-# Configure Apache
-RUN sed -i 's/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/var\/www\/html\/public/' /etc/apache2/sites-available/000-default.conf
-RUN sed -i 's/\<Directory \/var\/www\/html\>/\<Directory \/var\/www\/html\/public\>/g' /etc/apache2/sites-available/000-default.conf
+RUN (Get-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Raw) -replace 'DocumentRoot "/usr/local/apache2/htdocs"', 'DocumentRoot "/var/www/html/public"' | Set-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Force
+RUN (Get-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Raw) -replace '<Directory "C:/Apache24/htdocs">', '<Directory "/var/www/html/public">' | Set-Content -Path 'C:\xampp\apache\conf\httpd.conf' -Force
+
+# Enable Apache modules
+RUN echo "LoadModule rewrite_module modules/mod_rewrite.so" >> 'C:\xampp\apache\conf\httpd.conf'
 
 # Add Symfony binary directory to PATH
 ENV PATH="${PATH}:/var/www/html/bin"
