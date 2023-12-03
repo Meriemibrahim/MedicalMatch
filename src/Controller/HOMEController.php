@@ -42,8 +42,8 @@ class HOMEController extends AbstractController
             
         // Create a TemplatedEmail
         $email = (new TemplatedEmail())
-            ->from(new Address($email1, 'Your Name'))
-            ->to(new Address('meriem.ibrahim@esprit.tn', 'Recipient Name'))
+            ->from(new Address($email1, $email1))
+            ->to(new Address('contact@medmatch.fr', 'contact@medmatch.frs'))
             ->subject('nouvelle Demande')
             ->htmlTemplate('mailer/index.html.twig') // Template path
             ->attachFromPath($file->getPathname(), $file->getClientOriginalName())
@@ -65,8 +65,8 @@ class HOMEController extends AbstractController
         $mailer->send($email);
 
         $email2 = (new TemplatedEmail())
-        ->from(new Address('meriem.ibrahim@esprit.tn', 'Your Name'))
-        ->to(new Address($email1, 'Recipient Name'))
+        ->from(new Address('contact@medmatch.fr', 'contact@medmatch.fr'))
+        ->to(new Address($email1, $email1))
         ->subject('Vous Avez Postuler Chez MedicalMatch ')
         ->htmlTemplate('mailer/index1.html.twig') // Template path
         ->addPart((new DataPart(fopen('images/logo-223x50.png', 'r'), 'footer-signature', 'image/png'))->asInline())
@@ -103,8 +103,8 @@ public function indexmailerr(Request $request,MailerInterface $mailer): Response
             
         // Create a TemplatedEmail
         $email = (new TemplatedEmail())
-            ->from(new Address($email1, 'Your Name'))
-            ->to(new Address('meriem.ibrahim@esprit.tn', 'Recipient Name'))
+            ->from(new Address($email1, $email1))
+            ->to(new Address('contact@medmatch.fr', 'contact@medmatch.fr'))
             ->subject('nouveau Message De Contacts')
             ->htmlTemplate('mailer/index.html.twig') // Template path
             ->addPart((new DataPart(fopen('images/logo-223x50.png', 'r'), 'logo', 'image/png'))->asInline())
@@ -125,8 +125,8 @@ public function indexmailerr(Request $request,MailerInterface $mailer): Response
         $mailer->send($email);
 
         $email2 = (new TemplatedEmail())
-        ->from(new Address('meriem.ibrahim@esprit.tn', 'Your Name'))
-        ->to(new Address($email1, 'Recipient Name'))
+        ->from(new Address('contact@medmatch.fr', 'contact@medmatch.fr'))
+        ->to(new Address($email1, $email1))
         ->subject('Votre Message est envoyée ')
         ->htmlTemplate('mailer/index2.html.twig') // Template path
         ->addPart((new DataPart(fopen('images/logo-223x50.png', 'r'), 'footer-signature', 'image/png'))->asInline())
