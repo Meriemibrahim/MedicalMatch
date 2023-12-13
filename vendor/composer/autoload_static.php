@@ -8,28 +8,15 @@ class ComposerStaticInitaea301a949eef1527253eca0c466dba6
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'e8aa6e4b5a1db2f56ae794f1505391a8' => __DIR__ . '/..' . '/amphp/amp/lib/functions.php',
-        '76cd0796156622033397994f25b0d8fc' => __DIR__ . '/..' . '/amphp/amp/lib/Internal/functions.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '6cd5651c4fef5ed6b63e8d8b8ffbf3cc' => __DIR__ . '/..' . '/amphp/byte-stream/lib/functions.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        'bcb7d4fc55f4b1a7e10f5806723e9892' => __DIR__ . '/..' . '/amphp/sync/src/functions.php',
-        'e187e371b30897d6dc51cac6a8c94ff6' => __DIR__ . '/..' . '/amphp/sync/src/ConcurrentIterator/functions.php',
-        '8dc56fe697ca93c4b40d876df1c94584' => __DIR__ . '/..' . '/amphp/process/lib/functions.php',
-        '3da389f428d8ee50333e4391c3f45046' => __DIR__ . '/..' . '/amphp/serialization/src/functions.php',
-        '445532134d762b3cbc25500cac266092' => __DIR__ . '/..' . '/daverandom/libdns/src/functions.php',
         '2203a247e6fda86070a5e4e07aed533a' => __DIR__ . '/..' . '/symfony/clock/Resources/now.php',
-        '7ebf029ad4b246f1e3f66192b40a932f' => __DIR__ . '/..' . '/amphp/dns/lib/functions.php',
-        'e1e8b49c332434256b5df11b0f0c2a62' => __DIR__ . '/..' . '/league/uri-parser/src/functions_include.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '3d8ee50db78074a9235f0c2008c26b42' => __DIR__ . '/..' . '/amphp/http/src/functions.php',
-        'd4e415514e4352172d58f02433fa50e4' => __DIR__ . '/..' . '/amphp/socket/src/functions.php',
-        '1c2dcb9d6851a7abaae89f9586ddd460' => __DIR__ . '/..' . '/amphp/socket/src/Internal/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -146,15 +133,6 @@ class ComposerStaticInitaea301a949eef1527253eca0c466dba6
             'Monolog\\' => 8,
             'Masterminds\\' => 12,
         ),
-        'L' => 
-        array (
-            'LibDNS\\' => 7,
-            'League\\Uri\\' => 11,
-        ),
-        'K' => 
-        array (
-            'Kelunik\\Certificate\\' => 20,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -180,18 +158,6 @@ class ComposerStaticInitaea301a949eef1527253eca0c466dba6
         array (
             'App\\Tests\\' => 10,
             'App\\' => 4,
-            'Amp\\WindowsRegistry\\' => 20,
-            'Amp\\Sync\\' => 9,
-            'Amp\\Socket\\' => 11,
-            'Amp\\Serialization\\' => 18,
-            'Amp\\Process\\' => 12,
-            'Amp\\Parser\\' => 11,
-            'Amp\\Http\\Client\\' => 16,
-            'Amp\\Http\\' => 9,
-            'Amp\\Dns\\' => 8,
-            'Amp\\Cache\\' => 10,
-            'Amp\\ByteStream\\' => 15,
-            'Amp\\' => 4,
         ),
     );
 
@@ -543,20 +509,6 @@ class ComposerStaticInitaea301a949eef1527253eca0c466dba6
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'LibDNS\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/daverandom/libdns/src',
-        ),
-        'League\\Uri\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/uri/src',
-            1 => __DIR__ . '/..' . '/league/uri-interfaces/src',
-            2 => __DIR__ . '/..' . '/league/uri-parser/src',
-        ),
-        'Kelunik\\Certificate\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kelunik/certificate/src',
-        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -612,55 +564,6 @@ class ComposerStaticInitaea301a949eef1527253eca0c466dba6
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-        ),
-        'Amp\\WindowsRegistry\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/windows-registry/lib',
-        ),
-        'Amp\\Sync\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/sync/src',
-        ),
-        'Amp\\Socket\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/socket/src',
-        ),
-        'Amp\\Serialization\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/serialization/src',
-        ),
-        'Amp\\Process\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/process/lib',
-        ),
-        'Amp\\Parser\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/parser/src',
-        ),
-        'Amp\\Http\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/http-client/src',
-        ),
-        'Amp\\Http\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/hpack/src',
-            1 => __DIR__ . '/..' . '/amphp/http/src',
-        ),
-        'Amp\\Dns\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/dns/lib',
-        ),
-        'Amp\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/cache/lib',
-        ),
-        'Amp\\ByteStream\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/byte-stream/lib',
-        ),
-        'Amp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/amphp/amp/lib',
         ),
     );
 
