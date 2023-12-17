@@ -1,4 +1,4 @@
-he name given to the Headless Chrome service (lowercase alphanumeric only).
+#he name given to the Headless Chrome service (lowercase alphanumeric only).
 chrome-headless:
     # The type of your service (chrome-headless), which uses the format
     # 'type:version'. Be sure to consult the Headless Chrome documentation
