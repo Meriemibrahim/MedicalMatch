@@ -1,0 +1,1276 @@
+// As keys there should be used postfixes _label for 1-2 word labels and _text for provided texts.
+
+window.translations = {
+  text_label: 'Texte',
+  text_size_label: 'Taille du texte',
+  font_pairings_label: 'Paires de polices',
+  colors_label: 'Couleurs',
+  your_colors_label: 'Vos couleurs',
+  color_presets_label: 'Presets de couleurs',
+  styles_label: 'Styles',
+  corner_radius_label: "Rayon d'angle",
+  invite_label: 'Inviter',
+  widgets_label: 'Widgets',
+  settings_label: 'Paramètres',
+  collapse_label: 'Réduire',
+  expand_label: 'Élargir',
+  website_settings_label: 'Paramètres du site web',
+  general_label: 'Général',
+  domain_label: 'Domaine',
+  marketing_integrations_label: 'Intégrations marketing',
+  cookies_label: 'Cookies',
+  discard_label: 'Rejeter',
+  save_label: 'Enregistrer',
+  show_cookie_consent_bar_label:
+    'Afficher la bannière de consentement aux cookies',
+  show_cookie_consent_bar_tooltip_text:
+    "Une bannière de consentement aux cookies est un pop-up qui apparaît sur un site web lors de la première visite de l'utilisateur sur le site. Demandez la permission de stocker les données des visiteurs dans leur navigateur pendant qu'ils utilisent votre site.",
+  cookie_button_text_label: 'Texte du bouton %s',
+  accept_cookies_text: 'Accepter les Cookies',
+  cookie_consent_text_label: 'Texte du consentement aux %s',
+  site_uses_cookies_text:
+    'Ce site web utilise des cookies pour vous offrir la meilleure expérience possible.',
+  get_link_to_invite_contributor_label:
+    'Obtenir un lien pour inviter un contributeur',
+  expiry_date_label: "Date d'expiration",
+  website_name_label: 'Nom du site web',
+  upload_label: 'Télécharger',
+  recommended_size_label: 'Taille recommandée',
+  format_label: 'Format',
+  format_tooltip_text:
+    "Une favicon s'affiche à côté du titre d'une page dans les onglets du navigateur. L'ajout d'une favicon personnalisée permet de reconnaître votre site dans un navigateur rempli d'onglets ou de signets.",
+  general_social_image_label: 'Image générale pour les réseaux sociaux',
+  general_social_image_tooltip_text:
+    "Cette image apparaîtra en tant qu'image vedette lorsque vous partagerez votre page sur les plateformes sociales.",
+  website_email_label: 'E-mail du site web',
+  website_email_tooltip_text:
+    'Ajoutez votre e-mail professionnel pour recevoir tous les e-mails de soumission de formulaire de contact.',
+  enter_your_email_label: 'Entrez votre adresse e-mail',
+  google_analytics_prop_id_label: 'ID de la propriété de Google Analytics',
+  google_analytics_prop_id_tooltip_text:
+    'ID Google Analytics relie votre compte à un site web pour collecter des données. Vous trouverez votre %s dans votre compte Google Analytics.',
+  enter_your_id_label: 'Entrez votre ID',
+  google_adsense_id_label: 'ID de Google AdSense',
+  google_adsense_id_tooltip_text:
+    "Google AdSense fonctionne en associant des annonces à votre site en fonction de votre contenu et de vos visiteurs.  Trouvez votre ID d'éditeur dans la section “Informations sur le compte”, champ “ID d'éditeur”.",
+  ads_txt_label: 'Ads.txt',
+  ads_txt_textarea_label: 'Entrez le contenu de votre %s',
+  ads_txt_tooltip_text:
+    "Le Ads.txt se concentre sur la protection de l'inventaire publicitaire hébergé par le site web. Vous pouvez contrôler les parties du secteur de la publicité auxquelles vous autorisez à vendre des annonces sur votre site web.",
+  get_link_to_invite_contributor_text:
+    'Impliquez un collaborateur dans le processus de création de votre site web en partageant ce lien avec lui. Toute personne disposant de ce lien peut modifier et remodeler ce site web.',
+  note_label: 'Note',
+  prev_link_has_expired_label: 'Votre lien précédent a expiré',
+  link_has_expires_on_label: 'Votre lien expire le',
+  get_link_to_invite_contributor_note:
+    "%s Le lien ne permet pas d'accéder aux paramètres de publication et de domaine.",
+  get_link_to_invite_contributor_note_tr1: 'Note :',
+  get_the_link_label: 'Obtenir le lien',
+  messengers_label: 'Messengers',
+  live_chats_label: 'Chats en ligne',
+  position_on_website_label: 'Position sur le site web',
+  left_label: 'Gauche',
+  right_label: 'Droite',
+  connect_label: 'Connecter',
+  customize_label: 'Personnaliser',
+  enter_fb_messenger_link_label: 'Entrez le lien de Facebook Messenger',
+  enter_phone_number_label: 'Entrez le numéro de téléphone',
+  enter_username_label: "Entrez le nom d'utilisateur",
+  provide_superior_service_label:
+    "Offrez un service clients de haute qualité en utilisant l'un de ces chats",
+  enter_copied_code__or_enter_your_label:
+    'Entrez le code copié ou entrez votre',
+  connected_label: 'Connecté',
+  add_to_website_label: 'Ajouter au site web',
+  add_image_label: 'Ajouter une image',
+  name_label: 'Nom',
+  subtitle_label: 'Sous-titre',
+  message_label: 'Message',
+  button_text_label: 'Texte du bouton',
+  customize_chat_window_label: "Personnaliser l'onglet %s",
+  active_label: 'Actif',
+  remove_label: 'Retirer',
+  delete_label: 'Supprimer',
+  copied_label: 'Copié',
+
+  use_free_domain_label: 'Utiliser un sous-domaine gratuit',
+  use_free_domain_text:
+    'Publiez votre site web sur un sous-domaine gratuit fourni par Renderforest',
+  enter_your_subdomain_label: 'Modifiez votre sous-domaine gratuit',
+  enter_your_subdomain_tooltip_text:
+    "Les domaines comportant des caractères spéciaux (tels que å ü et ø) peuvent ne pas s'afficher correctement sur tous les navigateurs.",
+  enter_your_subdomain_text:
+    'Votre site web sera publié avec le sous-domaine gratuit Renderforest.',
+  add_custom_domain_label: 'Ajouter un domaine personnalisé',
+  add_custom_domain_text:
+    'Donnez une dimension professionnelle à votre site web et facilitez sa recherche.',
+  enter_external_domain_or_choose_label:
+    'Entrez votre domaine externe ou choisissez-le dans',
+  enter_external_domain_or_choose_text:
+    "%s Tout domaine nouvellement enregistré peut prendre jusqu'à %s pour être entièrement activé et devenir actif.",
+  my_domains_label: 'Mes domaines',
+  hours: 'heures',
+  connect_label: 'Connecter',
+  learn_more_about_ssl_cert_label:
+    'En savoir plus sur la connexion du certificat %s',
+  free_ssl_cert_tooltip_text:
+    "L'ajout d'un certificat SSL numérique à votre domaine permet d'authentifier un site web et d'établir une connexion cryptée.",
+  dns_details_label: 'Détails %s',
+  dns_details_tooltip_text:
+    "Vous devez acheter votre domaine auprès du registre DNS, le configurer puis écrire ici l'adresse où votre site web sera disponible. Nous gérerons la création et le renouvellement des certificats pour votre domaine personnalisé.",
+  dns_details_text:
+    "%s que tout changement de %s peut prendre jusqu'à %s pour être entièrement diffusé et devenir actif.",
+  cname_label: 'CNAME',
+  cname_tooltip_text:
+    "Certains fournisseurs du DNS ne permettent pas d'attribuer un CNAME pour un domaine de niveau racine. Dans ce cas, essayez d'attribuer un Enregistrement A.",
+  record_label: 'Un enregistrement',
+  configure_your_own_domain_label: 'Pour configurer votre propre domaine',
+  sigin_your_domain_provider_label:
+    'Connectez-vous à votre compte de fournisseur de domaine et trouvez les paramètres de %s.',
+  edit_your_dns_records_label: 'Modifiez vos enregistrements DNS',
+  create_new_cname_record_label:
+    'Créez un nouvel enregistrement CNAME comme suit :',
+  type_label: 'Type',
+  name_label: 'Nom',
+  value_label: 'Valeur',
+  save_your_changes_label: 'Enregistrez vos modifications',
+  get_it_now_label: 'Obtenir maintenant',
+  need_help_label: "Besoin d'aide?",
+  copy_label: 'Copier',
+  upgrade_website_email_label:
+    "Mettez à niveau pour ajouter l'e-mail de votre site web",
+  upgrade_website_email_text: "et profiter d'autres avantages",
+  amateur_label: 'Amateur',
+
+  upgrade_to_power_text: 'Mettez à niveau pour optimiser vos sites web',
+  upgrade_label: 'Mettre à niveau',
+  monthly_label: 'Mensuel',
+  yearly_label: 'Annuel',
+  premium_website_label: 'Site web Premium',
+  per_month_label: 'Par mois',
+  billed_annually_label: 'facturé annuellement',
+  everything_in_premium_plus_label:
+    'Tout ce qui est dans le site web Premium, plus',
+  want_more_check_other_label: 'Envie de plus ? Consultez les autres %s',
+  your_storage_will_be_added_to_active_subsb_label:
+    "Votre stockage sera ajouté à votre plan d'abonnement actif si vous en avez un.",
+  sub_plans_label: 'Plans d`abonnement',
+  pro_label: 'Pro',
+  free_ssl_cert_label: 'Certificat SSL gratuit',
+  free_ssl_cert_label_separated: 'Certificat SSL %s',
+  free_ssl_cert_label_separated_tr1: 'gratuit',
+  custom_domain_label: '1 connexion %s',
+  no_branded_footer_label: '%s pied de page de marque',
+  advanced_marketing_tools: 'Outils de marketing %s',
+  unlimited_collaborators_label: '%s illimités',
+  hundred_plus_templates_label: '%s modèles',
+  unlimited_hd_videos: '%s illimitées',
+  gb_storage_label: '%s de stockage*',
+  hq_logos_label: 'Logos de %s',
+  hq_mockups_label: 'Maquettes de %s',
+  unlimited_font_uploads: 'Télécharger %s',
+  gdpr_compliance: 'Mise en conformité %s',
+  unlimited_collaborators_label_tr1: 'Collaborateurs',
+  hundred_plus_templates_label_tr1: '100+',
+  unlimited_hd_videos_tr1: 'Vidéos HD1080',
+  gb_storage_label_tr1: 'GB',
+  hq_logos_label_tr1: 'haute qualité',
+  unlimited_font_uploads_tr1: 'Police illimitée',
+  custom_domain_label_tr1: 'à un domaine personnalisé',
+  no_branded_footer_label_tr1: 'No',
+  advanced_marketing_tools_tr1: 'avancé',
+  gdpr_compliance_tr1: 'RGPD',
+
+  one_custom_domain_label_tr1: 'à un domaine personnalisé',
+  one_custom_domain_label: '1 connexion %s ',
+  advanced_marketing_tools_label: 'Outils de marketing %s',
+  advanced_label: 'avancés',
+  without_label: 'Pas',
+  tools_label: 'outils',
+  templates_label: 'modèles',
+  hundred_templates_label: '%s modèles',
+  hundred_templates_label_tr1: '100+',
+  unlimited_collaborators_label: 'Un nombre %s de collaborateurs',
+  unlimited_font_label: 'de police illimité',
+  unlimited_label: 'Illimité',
+  storage_label: '%s de stockage*',
+  no_branded_footer_label: '%s de pied de page de marque',
+  high_quality_logos_label: 'Logos de %s',
+  high_quality_mockups_label: 'Mockups de %s',
+  high_quality_label: 'haute qualité',
+  font_uploads_label: 'Téléchargements %s',
+  premium_graphic_design_label: 'Conceptions graphiques %s',
+  premium_graphic_design_label_tr1: 'de qualité supérieure',
+  videos_label: 'Vidéos %s',
+  upgrade_to_add_label: 'Mettez à niveau pour ajouter',
+
+  pages_label: 'Pages',
+  reset_changes_disabled_text:
+    'Le bouton Réinitialiser les modifications rétablit le contenu et les paramètres de votre publication. Il sera actif dès que vous aurez effectué des modifications.',
+  preview_label: 'Aperçu',
+  publish_label: 'Publier',
+  upgrade_label: 'Mise à jour',
+  my_projects_label: 'Mes projets',
+  websites_label: 'Sites Web',
+  domains_label: 'Domaine',
+  more_label: 'Plus',
+  connect_domain_label: 'Connecter le domaine',
+  help_and_support_label: 'Aide et support',
+  sign_out_label: 'Se déconnecter',
+  sign_in_label: 'Se connecter',
+  choose_the_website_section_label:
+    'Choisissez les sections du site Web que vous souhaitez réinitialiser',
+  choose_the_website_section_info_label:
+    "La réinitialisation supprimera les dernières modifications et rétablira le contenu et les paramètres publiés sur le site Web de l'entreprise.",
+  reset_changes_label: 'Réinitialiser les changements',
+  agreement_label_label:
+    'Je comprends que je ne peux pas revenir sur les changements.',
+  reset_changes_empty_tooltip_text:
+    'Veuillez choisir les sections du site Web que vous souhaitez réinitialiser.',
+  agreement_required_text:
+    'Veuillez cocher cette case si vous souhaitez poursuivre.',
+  content_label: 'Contenu',
+  reset_changes_content_description:
+    'Cette opération réinitialisera le contenu textuel, les styles, les couleurs, les polices, les fichiers multimédias et les paramètres de page de votre site Web.',
+  settings_label: 'Paramètres',
+  reset_changes_settings_description:
+    'Cette opération réinitialisera les paramètres généraux, les intégrations marketing et les cookies de votre site Web.',
+  widget_settings_label: 'Paramètres des widgets',
+  reset_changes_widget_settings_description:
+    'Cela réinitialisera les paramètres des messageries et des chats en direct de votre site Web.',
+  background_label: "Fond d'écran",
+  replace_label: 'Remplacer',
+  add_logo_label: 'Ajouter un logo',
+  add_link_label: 'Ajouter un lien',
+  component_label: 'Composant',
+  pages_settings_label: 'Pages_réglages',
+  your_pages_label: 'Vos pages',
+  page_meta_data_label: 'Méta-données de la page',
+  meta_title_tag_label: 'Balise titre méta',
+  your_page_title_placeholder: 'Titre de votre page',
+  your_page_title_tooltip_text:
+    "Le titre de votre page apparaîtra en haut de la fenêtre d'un navigateur et dans les pages de résultats des moteurs de recherche.",
+  meta_description_label: 'Méta-description',
+  meta_description_tooltip_text:
+    'La méta-description résume le contenu de votre page et aide les moteurs de recherche à mieux le comprendre. Elle peut apparaître dans les résultats de recherche avec le titre de votre page.',
+  meta_keywords_label: 'Mots-clés Méta',
+  meta_keywords_placeholder_label: 'Ex. site web, réactif, réception, design',
+  meta_keywords_tooltip_text:
+    'Les mots-clés aident les moteurs de recherche à comprendre le sujet de votre page et à le relier à des termes de recherche spécifiques.',
+  unlock_more_seo_features_label: "Déverrouillez d'autres fonctions de SEO",
+  unlock_label: 'Déverrouiller',
+  enjoy_other_benefits_label: "et profiter d'autres avantages",
+  add_new: 'Ajouter un nouveau',
+  back_to_editing_label: "Retour à l'édition",
+  preview_in_new_tab_label: 'Aperçu dans un nouvel onglet',
+  explore_editing_label: "Explorer l'édition",
+  explore_components_label: 'Explorer les composants',
+  website_status_label: 'Statut du site web',
+  share_label: 'Partager',
+  buy_domain_label: 'Acheter le domaine',
+  last_published_on_label: 'Dernière publication le %s',
+  want_to_go_offline_label: 'Vous voulez vous déconnecter ?',
+  want_to_go_offline_description:
+    'Connectez votre domaine personnalisé pour faire passer votre site au niveau supérieur et contrôler facilement la visibilité de votre site.',
+  reset_changes_tooltip:
+    'Les changements de réinitialisation seront disponibles après la publication.',
+  color_modes_label: 'Modes de couleur',
+  background_image_label: "Image d'arrière-plan",
+  delete_image_label: "Supprimer l'image",
+  component_image_label: 'Image du composant',
+  replace_image_label: "Remplacer l'image",
+  background_video_label: 'Vidéo de fond',
+  move_down_label: 'Descendre',
+  move_up_label: 'Avancer',
+  dark_mode_label: 'Mode sombre',
+  light_mode_label: 'Mode clair',
+  extra_light_mode_label: 'Mode clair supplémentaire',
+  adjust_transparency_label: 'Ajuster la transparence',
+  flip_label: 'Retourner',
+  duplicate_label: 'Dupliquer',
+  component_actions_label: 'Actions des composants',
+  uploading_label: 'Téléchargement',
+  default_label: 'Défaut',
+  new_link_label: 'Nouveau lien',
+  logo_style_label: 'Style du logo',
+  selected_label: 'Sélectionné',
+  get_started_label: 'Démarrer',
+  learn_more_label: 'En savoir plus',
+  highlight_label: 'Souligner',
+  mockup_color_label: 'Couleur de la maquette',
+  choose_location_label: 'Choisir la localisation',
+  center_align_label: 'Alignement central',
+  left_align_label: 'Alignement à gauche',
+  right_align_label: 'Alignement à droite',
+  send_label: 'Envoyer',
+  add_social_link_label: 'Ajouter un lien social',
+  add_image_url_label: "Ajouter l'image %s",
+  paste_your_url_label: 'Collez votre %s ici',
+  paste_enter_valid_url_label: 'Coller entrer une image valide %s',
+  this_field_cannot_be_empty_label: 'Ce champ ne peut pas être vide',
+  add_video_url_description:
+    'sur les appareils mobiles, votre vidéo sera remplacée par sa vignette.',
+  edit_button_title_label: "Titre du bouton d'édition",
+  my_files_label: 'Mes dossiers',
+  stock_images_label: 'Images de stock',
+  create_logo_label: 'Créer un logo',
+  social_label: 'Social',
+  glyph_label: 'Glyphe',
+  outline_label: 'Grandes lignes',
+  all_label: 'Tous',
+  search_label: 'Recherche',
+  online_label: 'En ligne',
+  offline_label: 'Hors ligne',
+  online_offline_status_description_1:
+    'Le statut du site web définit si un site web est visible sur Internet.',
+  online_offline_status_description_2:
+    'Se mettre hors ligne ne supprimera pas votre site web. Vous pouvez vous remettre en ligne à tout moment.',
+  view_my_website_label: 'Voir mon site web',
+  disconnect_domain_popup_warning_text:
+    'Le statut de votre site web passera automatiquement à %s sur le sous-domaine gratuit.',
+  disconnect_domain_popup_warning_text_t1: 'en ligne',
+  disconnect_domain_popup_title:
+    'Êtes-vous sûr de vouloir déconnecter votre domaine ?',
+  disconnect_domain_popup_text:
+    'Votre %s ne fonctionnera plus pour votre site web.',
+  want_visitors_see_website_popup_title:
+    'Vous voulez que les visiteurs voient votre site Web ?',
+  want_visitors_see_website_popup_description:
+    "Votre site Web est actuellement hors ligne. Si vous voulez que d'autres personnes voient votre site, nous vous recommandons de changer l'état de votre site en ligne.?",
+  publish_and_go_online_label: 'Publier et mettre en ligne',
+  publish_and_stay_offline_label: 'Publier et rester hors ligne',
+  ths_website_is_tempr_unavailable_title:
+    'Ce site est temporairement indisponible',
+  please_try_again_later_label: 'Veuillez réessayer plus tard',
+  oops_something_went_wrong_text:
+    "Oups, quelque chose s'est mal passé. Veuillez essayer plus tard ou contacter l'équipe d'assistance.",
+  got_it_label: "J'ai compris.",
+  sign_in_your_domain_provider_label:
+    'Connectez-vous au compte de votre fournisseur de domaine et trouvez les paramètres DNS.',
+  your_website_is_curr_online_label:
+    'Le statut de votre site web est déjà en ligne.',
+  are_you_sure_discard_changes_label:
+    'Êtes-vous sûr de vouloir abandonner vos modifications ?',
+  unsaved_changes_will_be_lost_label:
+    'Toute modification non sauvegardée sera perdue.',
+  congratulations_label: 'Félicitations !',
+  domain_connect_text: 'Votre domaine est connecté à votre site web !',
+  domain_connect_description:
+    "Veuillez noter qu'il peut s'écouler jusqu'à 48 heures avant que votre domaine ne devienne visible sur Internet.",
+  ok_got_it_label: 'Ok, compris',
+  free_ssl_cert_disable_switcher_label:
+    "Pour ajouter un certificat SSL, veuillez connecter un domaine et vous assurer qu'il est configuré.",
+  after_connecting_domain_it_may_take_48hrs_label:
+    "%s Après la connexion du domaine, il peut s'écouler jusqu'à 48 heures avant que votre site web ne soit disponible.",
+  you_have_broken_link_label:
+    "Le lien est cassé, veuillez l'éditer et le réparer.",
+  changes_saved_label: 'Changements enregistrés',
+  my_colors_label: 'Mes couleurs',
+  add_palette_label: 'Ajouter une palette',
+  header_label: 'En-tête',
+  please_note_label: 'Veuillez noter:',
+  page_settings_note_label_tr1: 'Attention',
+  page_settings_note_label:
+    "%s Nous conserverons vos métadonnées tant que votre plan d'abonnement sera actif.",
+  use_the_metadata_label:
+    "Utilisez ces métadonnées pour l'ensemble du site web",
+  delete_page_from_pages_label:
+    'Êtes-vous sûr de vouloir supprimer la page %s de vos pages ?',
+  link_popup_select_click_action_label: "Sélectionnez l'action du clic",
+  link_popup_on_which_page_label: 'Sur quelle page ?',
+  link_popup_for_action_label: "Tapez un nom pour l'action",
+  add_new_palette_label: 'Ajouter une nouvelle palette',
+  widget_in_label: 'Lien messenger invalide',
+  enter_fb_messenger_link_label: 'Entrez le lien Facebook Messenger.',
+  reset_changes_widget_settings_description:
+    'Cela réinitialisera les paramètres de Messengers et des chats en direct de votre site web.',
+  scroll_to_component_label: "Faites défiler jusqu'au composant",
+  make_phone_call_label: 'Passez un appel téléphonique',
+  open_web_address_label: 'Ouvrir une adresse web',
+  open_page_label: 'Ouvrir une page',
+  upload_from_computer_label: "Télécharger à partir de l'ordinateur",
+  choose_from_my_files_label: 'Choisir dans Mes fichiers',
+  edit_label: 'Modifier',
+  saved_label: 'Sauvegardé',
+  widgets_messengers_title:
+    'Utilisez une de ces messageries ou toutes ensemble pour rester connecté avec vos clients',
+  website_name_validation_message:
+    'Le nom ne doit pas comporter plus de 70 caractères.',
+  settings_tab_changing_popup_label:
+    'Êtes-vous sûr(e) de vouloir quitter cet onglet ?',
+  stay_label: 'Rester',
+  leave_label: 'Quitter',
+  subdomain_validation_message_error_label:
+    'Le sous-domaine ne doit pas dépasser 32 caractères',
+  subdomain_required_symbols_label:
+    'Le sous-domaine peut seulement contenir a-z, 0-9, et (_-)',
+  create_new_a_record_label: 'Créez un nouvel enregistrement `A` comme suit:',
+  étiquette_de_signature_de_votre_domaine_de_fournisseur:
+    'Connectez-vous au compte de votre fournisseur de domaine et trouvez les paramètres DNS.',
+  edit_your_records_label: 'Modifier vos enregistrements %s',
+  you_have_no_domain_label: "Désolé, vous n'avez pas de domaines.",
+  invalid_domain_label: 'Domaine non valide',
+  choose_label: 'Choisir',
+  the_server_encountered_internal_err_label:
+    '%s Le serveur a rencontré une erreur interne. Essayez à nouveau plus tard.',
+  disconnect_label: 'Se déconnecter',
+  remove_free_ssl_cert_label:
+    'Êtes-vous sûr de vouloir supprimer le certificat SSL gratuit ?',
+  after_removing_certificate_you_can_add_label:
+    '%s Après avoir retiré le certificat, vous pouvez en ajouter un nouveau en environ %s',
+  domain_congrats_after_connection_label:
+    'Vous devez publier votre site web pour le mettre en ligne et supprimer le filigrane de Renderforest.',
+  domain_congrats_after_connection_text:
+    'Votre domaine est connecté à votre site web !',
+  page_already_exists_label: 'Ce nom de page existe déjà',
+  enter_valid_url_label: 'Veuillez entrer une URL valide',
+  delete_last_component_label: 'Supprimer le composant',
+  delete_last_component_text:
+    'Êtes-vous sûr de vouloir supprimer le dernier composant ? Cela supprimera toute votre page. Vous pouvez envisager de le remplacer.',
+  page_deletation_popup_label:
+    'Êtes-vous sûr de vouloir supprimer la page %s de vos pages ?',
+  social_url_label: 'Url social',
+  components_header_category_label:
+    'Que la création commence ! 🤩Prenez un en-tête hyper puissant à placer en haut de votre site web.👇',
+  components_feature_category_label:
+    'Passez à autre chose 💃et utilisez ces éléments pour énumérer vos excellents services et leurs avantages. 💁‍♀️',
+  components_text_category_label:
+    "Rendez-le plus créatif ! 🥰Ajoutez ces composants textuels uniques et tapez autant d'infos que vous le souhaitez. ✍️",
+  components_cta_category_label:
+    "HC'est parti ! 🌟Un tas de composants pleins de liens et de boutons. 😎",
+  components_pricing_category_label:
+    "Mais d'abord, les prix.🤑 Prenez ces composants pour afficher votre liste de prix.💰",
+  components_team_category_label:
+    "Pour la meilleure équipe qui soit ! 🤝Ajouter pour présenter votre belle équipe d'une belle manière. 💁‍♂️",
+  components_testimonial_category_label:
+    'Montrez-leur que vous êtes génial.👸Mettez en valeur les critiques positives avec ces éléments.💬',
+  components_client_category_label:
+    'Vous pourriez avoir besoin de ça ! 🙋Placez les logos de vos clients ici en signe de gratitude.',
+  components_step_category_label:
+    'Étape 1 : ☝️Utilisez ces éléments pour expliquer le fonctionnement des choses étape par étape.🤓',
+  components_post_category_label:
+    'Salut les blogueurs ! 👩💻Voici quelques éléments pour partager des nouvelles, des conseils et des astuces.📚',
+  components_slider_category_label:
+    "C'est le moment de s'amuser ! 🤪Ajoutez quelques photos aux curseurs et laissez-les tourner comme un carrousel.🎡",
+  components_portfolio_category_label:
+    'Votre galerie de photos est ici.🌠 Vous pouvez mettre en valeur les meilleurs moments avec les meilleurs éléments.🤩',
+  components_video_category_label:
+    "La bonne nouvelle, c'est que vous pouvez promouvoir vos vidéos avec ces composants.🥰",
+  components_music_category_label:
+    'Boo-boo be doo ! 👩🎤Utilisez ces tout nouveaux composants pour partager votre musique.🎵',
+  components_faq_category_label:
+    'Psst.🤫 Voici quelques composants pour les questions et réponses les plus populaires.🙌',
+  components_email_category_label:
+    'Les newsletters sont importantes ! 📬Collectez les adresses électroniques de vos visiteurs via ces formulaires.🙋‍♂️‍',
+  components_contact_category_label:
+    "Restez toujours en contact ! 📌Mettez votre email, votre téléphone, votre localisation et d'autres informations de contact ici.💌",
+  components_footer_category_label:
+    'Ta-da, tu as presque fini ! 🥳Ajoutez un pied de page et résumez les liens les plus importants.📎',
+  icons_label: 'Icones',
+  there_are_no_icons_label: "Désolé, il n'y a pas d'icônes.",
+  choose_your_type_label: 'Choisissez votre type de visite.',
+  add_video_label: 'Ajouter une vidéo',
+  new_template_on_created_site_label:
+    'Êtes-vous sûr de vouloir appliquer ce modèle ?',
+  prev_changes_will_be_lost_label:
+    'Toutes vos modifications précédentes seront perdues.',
+  select_label: 'Sélectionner',
+  select_multiple_components_label: 'Sélectionner plusieurs composants',
+  cookie_consent_btn_label: 'Texte du bouton Cookie',
+  cookie_consent_text: 'Texte de consentement du cookie',
+  cookie_banner_label: 'Bannière de cookie',
+  gdpr_banner_label: 'Bannière de cookie GDPR',
+  simple_banner_description:
+    'Ajoutez une simple bannière de cookies pour indiquer à vos visiteurs que vous utilisez des cookies.',
+  gdpr_banner_description:
+    'Utilisez une bannière de cookies avancée, pour vous conformer aux exigences du GDPR.',
+  disabled_gdpr_banner_tooltip:
+    'Pour activer la bannière de cookie simple, vous devez désactiver la conformité GDPR.',
+  enable_gdpr_label: 'Permettre la conformité au GDPR',
+  gdpr_tooltip_text:
+    'Le règlement général sur la protection des données (GPDR) est une loi européenne sur la protection des données qui donne à vos visiteurs plus de contrôle sur les cookies que vous utilisez.',
+  gdpr_consent_descriptions:
+    "Pour se conformer aux exigences du GDPR, nous recommandons d'inclure des liens vers la politique de confidentialité et les paramètres des cookies dans la bannière.",
+  consent_input_label: 'Texte de consentement du cookie',
+  consent_default_text:
+    "Ce site web utilise des cookies pour améliorer votre expérience. En utilisant notre site web, vous acceptez l'utilisation de cookies.",
+  disabled_simple_banner_tooltip:
+    "Une bannière de consentement aux cookies est une fenêtre contextuelle qui apparaît sur un site Web lors de la première visite de l'utilisateur sur le site. Elle demande la permission de stocker les données des visiteurs dans leur navigateur pendant qu'ils utilisent votre site.",
+  simple_consent_description:
+    "Une simple bannière de cookies devrait inclure un bouton d'acceptation et une information claire sur l'utilisation des cookies.",
+  consent_textarea_label: 'Texte de consentement du cookie',
+  accept_btn_input_label: "Texte du bouton d'acceptation",
+  accept_btn_description:
+    "Le bouton d'acceptation permet à vos visiteurs de donner leur accord aux cookies que vous utilisez.",
+  accept_btn_label: "Modifier le texte du bouton d'acceptation",
+  privacy_policy_btn_description:
+    'Le bouton Politique de confidentialité renvoie à la section Politique de confidentialité de votre site web.',
+  decline_btn_description:
+    'Le bouton de refus permet aux utilisateurs de rejeter tous les cookies non essentiels.',
+  decline_btn_checkbox_label: 'Ajouter un bouton de refus',
+  privacy_policy_checkbox_label:
+    'Ajouter un bouton de politique de confidentialité',
+  privacy_policy_btn_label:
+    'Modifier le texte du bouton de la politique de confidentialité',
+  decline_btn_label: 'Modifier le texte du bouton de refus',
+  privacy_policy_link_label:
+    'Ajoutez un lien pour le bouton de votre politique de confidentialité',
+  accept_btn_text: "Bouton d'acceptation",
+  privacy_policy_btn_text: 'Bouton de politique de confidentialité',
+  privacy_policy_btn_tooltip:
+    "Une politique de confidentialité est une déclaration juridique qui explique quel type d'informations personnelles vous recueillez auprès des visiteurs de votre site Web, comment vous utilisez ces informations et comment vous les protégez. Remarque : vous pouvez créer une section de politique de confidentialité sur votre site Web à l'aide de nos composants de politique de confidentialité.",
+  settings_btn_text: 'Bouton de réglage des cookies',
+  settings_btn_tooltip:
+    'La fenêtre contextuelle des paramètres des cookies permet à vos visiteurs de gérer les cookies que vous utilisez et de définir leurs préférences en matière de cookies pour le site web.',
+  decline_btn_text: 'Bouton de refus',
+  settings_btn_description:
+    'Le bouton Paramètres des cookies renvoie à la fenêtre pop-up des paramètres des cookies.',
+  settings_btn_label: 'Texte du bouton de modification des paramètres',
+  customize_popup_btn_label: "Personnaliser l'étiquette",
+  privacy_policy_page_from_website_label: 'Page de votre site',
+  privacy_policy_web_url_label: 'Adresse web (URL)',
+  privacy_policy_add_to_footer_tooltip:
+    'Pour activer cette option, veuillez ajouter au moins un composant de pied de page à votre site Web.',
+  privacy_policy_add_to_footer_description:
+    'Cela ajoutera automatiquement le lien Politique de confidentialité à tous les pieds de page de votre site. Vous pouvez toujours revenir et le modifier ici.',
+  privacy_policy_add_to_footer_label:
+    "Ajout d'un lien Politique de confidentialité au pied de page",
+  confirm_btn_text: 'Texte du bouton de confirmation',
+  description_label: 'Description',
+  title_label: 'Titre',
+  cookie_categories_title: 'Catégories de cookies',
+  cookie_categories_description:
+    'Personnalisez le texte des principales catégories de cookies ci-dessous.',
+  title_for_cookies_label: 'Titre pour les cookies %s',
+  essential_cookies_tooltip:
+    "Faites savoir à vos visiteurs que les cookies essentiels sont nécessaires au bon fonctionnement du site web. N'oubliez pas : ces cookies ne peuvent pas être désactivés.",
+  analytics_cookies_tooltip:
+    "Faites savoir à vos visiteurs que les cookies d'analyse sont utilisés pour améliorer le contenu et construire de meilleures fonctionnalités qui améliorent les performances.",
+  marketing_cookies_tooltip:
+    'Faites savoir à vos visiteurs que les cookies marketing sont utilisés pour fournir la publicité et le contenu les plus pertinents.',
+  functional_cookies_tooltip:
+    'Faites savoir à vos visiteurs que les cookies fonctionnels sont utilisés pour fournir des fonctionnalités plus personnalisées.',
+  essential_label: 'Essentiel',
+  analytics_label: 'Analytique',
+  marketing_label: 'Marketing',
+  functional_label: 'Fonctionnel',
+  customize_cookie_popup_title:
+    'Personnaliser la fenêtre pop-up des paramètres des cookies',
+  customize_cookie_popup_description:
+    'La fenêtre contextuelle des paramètres des cookies aide vos visiteurs à définir leurs préférences pour les catégories de cookies que vous utilisez.',
+  apply_label: 'Appliquer',
+  cancel_label: 'Annuler',
+  sitemap_label: 'Plan du site',
+  sitemap_description:
+    'Nous générons automatiquement un plan de site XML pour votre site web. Le plan du site est mis à jour chaque fois que vous publiez votre site web.',
+  sitemap_button_text: 'View sitemap',
+  sitemap_tooltip_text:
+    'Le plan du site est la feuille de route de votre site web qui aide les moteurs de recherche à explorer le contenu de votre site et à trouver les pages les plus importantes.',
+  inactive_sitemap_button_not_published:
+    'Les plans de site sont disponibles pour les sites web publiés.',
+  inactive_sitemap_button_already_published:
+    'Veuillez publier à nouveau votre site Web pour afficher le plan du site.',
+
+  email_invalid_message: "L'e-mail n'est pas valide",
+  enter_metadata_label: 'Veuillez saisir les métadonnées sur le',
+  disabled_subdomain_tooltip_text:
+    'Pour réactiver votre sous-domaine gratuit, vous devez déconnecter votre propre domaine.',
+  settings_success_message:
+    'Sauvegardé. Publiez votre site web pour voir toutes les modifications.',
+  publish_to_see_all_changes_label:
+    'Publiez votre site web pour voir toutes les modifications.',
+  domain_is_already_used_label: 'Le domaine est déjà utilisé.',
+  expired_label: 'Expiré',
+  expires_label: 'Expiration :',
+  successfully_enabled: 'Activation réussie',
+  ssl_limit_tooltip_text:
+    'Vous pouvez ajouter un certificat à nouveau dans environ %s',
+  website_will_be_available_after_publishing_label:
+    'Votre site web sera disponible sur ce sous-domaine après la %s.',
+  website_will_be_available_after_publishing_label_tr1: 'Publication',
+  publishing_label: 'Publication',
+  change_your_domain_here_label: 'Changez votre domaine ici',
+  disconnect_domain_to_change:
+    "Pour changer de domaine, vous devez d'abord déconnecter le domaine actuel.",
+  status_change_warning_message:
+    'Le statut de votre site Web sera automatiquement modifié en ligne sur le sous-domaine gratuit.',
+  livechat_notification_label:
+    "%s Les chats en direct ne fonctionneront pas correctement pour les visiteurs qui refusent l'utilisation de cookies.",
+  how_you_want_to_publish_label:
+    'Choisissez comment vous voulez publier votre site web',
+  website_will_published_with_free_label:
+    'notre site web sera publié avec un sous-domaine gratuit',
+  invalid_subdomain_label: 'Sous-domaine non valide',
+  field_cannot_be_empty_label: 'Ce champ ne peut pas être vide',
+  want_to_get_custom_domain_label:
+    'Vous voulez obtenir un domaine personnalisé ?',
+  my_account_label: 'Mon compte',
+  will_be_saved_on_my_project_label:
+    'notre site web sera enregistré sur la page Mon projet',
+  saving_your_changes_label: 'Sauvegarde de vos modifications...',
+
+  max_char_message: 'La limite maximale de caractères est de %s',
+  widgets_required_field_message: 'Ce champ ne peut pas être vide.',
+  want_to_get_custom_domain_label:
+    'Vous voulez obtenir un domaine personnalisé ?',
+  succesfully_connected_message:
+    'Connecté. Publiez votre site web pour voir toutes les modifications.',
+  succesfully_disconnected_message:
+    'Déconnecté. Publiez votre site web pour voir tous les changements.',
+  disconnected_label: 'Déconnecté',
+
+  save_upto_label: 'Sauvegarder',
+  up_to_label: "Jusqu'à 60 %.",
+  settings_checkbox_label: "Bouton d'ajout de paramètres",
+  customize_settings_checkbox_label: 'Personnaliser la fenêtre popup',
+  essential_cookies_label: 'Cookies essentiels',
+  analytics_cookies_label: "Cookies d'analyse",
+  marketing_cookies_label: 'Cookies de marketing',
+  functional_cookies_label: 'Cookies fonctionnels',
+
+  show_cookie_consent_banner:
+    'Afficher la bannière de consentement aux cookies',
+  this_page_name_already_exists: 'Ce nom de page existe déjà',
+  marketing_integrations:
+    "<b>Note:</b> Les intégrations marketing ne fonctionneront pas correctement pour les visiteurs qui refusent l'utilisation de cookies.",
+  saving_your_changes_label: 'Sauvegarde de vos modifications...',
+  homepage_is_set_as_default:
+    'Les métadonnées %s sont définies par défaut pour toutes les pages.',
+  your_page_descriptiion: 'La description de votre page',
+  you_are_signed_in_with:
+    'Vous êtes connecté avec %s compte. Pour poursuivre avec ce lien, veuillez vous déconnecter.',
+  good_to_see_you_label: "C'est super de vous voir ici !",
+  before_you_starting_editing:
+    'Avant de commencer à éditer, rassurez-vous, toutes vos modifications seront enregistrées automatiquement.',
+  happy_sitebuilding: 'Bonne construction de site !',
+  link_has_expires_on_label: 'Votre lien expire le %s',
+  select_date_label: 'Sélectionnez la date',
+  select_time_label: "Sélectionnez l'heure",
+  enter_link_text: 'Entrez le texte du lien',
+  required_field_label: 'Champ obligatoire',
+  please_enter_phone_label: 'Veuillez entrer un numéro de téléphone',
+  phone_input_label: 'Quel est votre numéro de téléphone ?',
+  page_chooser_dropdown_label: 'Sur quelle page ?',
+  select_action: 'Sélectionnez une action',
+  recommended_label: 'recommandé',
+  fill_label: 'Remplir',
+  fit_label: 'Ajustez',
+  rotate_label: 'Rotation',
+  enter_your_appid_label: 'Entrez le code copié ou entrez votre App ID',
+  enter_your_chatid_label: 'Entrez le code copié ou entrez votre ID de chat',
+  enter_your_token_label: 'Entrez le code copié ou entrez votre jeton',
+  please_enter_valid_appid_label: 'Veuillez entrer un App ID valide',
+  please_enter_valid_chatid_label:
+    'Veuillez entrer un identifiant de chat valide',
+  please_enter_valid_token_label: 'Veuillez entrer un jeton valide',
+  remove_from_website_label: 'Retirer du site web',
+  disabled_button_tooltip_text:
+    'Pour ajouter ce chat en direct à votre site Web, veuillez supprimer le précédent.',
+  to_which_component_label: 'À quelle composante ?',
+  select_component_label: 'Sélectionnez un composant',
+  smaller_grid_label: 'Grille plus petite',
+  larger_grid: 'Grille plus grande',
+  can_only_one_category:
+    "Veuillez noter que vous ne pouvez ajouter qu'un seul composant %s.",
+  components_label: 'Composants',
+  couldnt_match_search_label:
+    "Désolé, nous n'avons pas trouvé de correspondance pour votre recherche.",
+  discover_newest_templates_label: 'Découvrez nos nouveaux modèles',
+  back_to_label: 'Retour à %s',
+  editing_label: 'édition',
+  new_website_label: 'Nouveau site web',
+  select_any_of_templates_label_tr1: 'modèles de site web',
+  select_any_of_templates_label:
+    "Sélectionnez l'un de nos %s et faites-en le vôtre.",
+  explore_templates_label: 'Explore Templates',
+  or_label: 'ou',
+  no_label: 'Non',
+  Business: 'Entreprise',
+  Lifestyle: 'Lifestyle',
+  Personal: 'Personnel',
+  Event: 'Événement',
+  Art: 'Art',
+  CV: 'CV',
+  Charity: 'Charité',
+  Conference: 'Conférence',
+  Design: 'Design',
+  Education: 'Éducation',
+  Festivals: 'Festivals',
+  Health: 'Santé',
+  Music: 'Musique',
+  Portfolio: 'Portfolio',
+  Religion: 'Religion',
+  Sports: 'Sport',
+  Wedding: 'Mariage',
+  Wellness: 'Bien-être',
+  pricing: 'tarification',
+  feature: 'fonctionnalité',
+  contact: 'contact',
+  step: 'étape',
+  team: 'équipe',
+  header: 'en-tête',
+  client: 'client',
+  portfolio: 'portfolio',
+  cta: 'cta',
+  text: 'texte',
+  email: 'e-mail',
+  footer: 'pied de page',
+  faq: 'faq',
+  slider: 'curseur',
+  testimonial: 'témoignage',
+  video: 'vidéo',
+  post: 'post',
+  music: 'musique',
+  privacyPolicy: 'Politique de confidentialité',
+  'Fashion and Beauty': 'Mode et beauté',
+  'Non-Profit': 'Sans but lucratif',
+  'Food and Drink': 'Nourriture et boisson',
+  'Individual Services': 'Services individuels',
+  'Law and Finance': 'Droit et finances',
+  'Marketing and Advertisement': 'Marketing et publicité',
+  Photography: 'Photographie ',
+  'Real Estate and Construction': 'Immobilier et constructions',
+  'Services and Maintenance': 'Services et maintenance ',
+  'Tech and App': 'Tech et App',
+  'Travel and Hospitality': 'Voyages et hospitalité',
+  sorry_we_couldnt_find:
+    "Désolé, nous n'avons pas trouvé de correspondance pour votre recherche.",
+  discover_new_templates_label: 'Découvrez nos nouveaux modèles',
+  all_your_prev_changes_will_be_lost_label:
+    'Êtes-vous sûr de vouloir appliquer ce modèle ?',
+  all_changes_will_be_lost_label:
+    'Toutes vos modifications précédentes seront perdues.',
+  not_published_tooltip_text:
+    'Les changements de réinitialisation seront disponibles après la publication.',
+  no_changes_tooltip_text:
+    'La réinitialisation des changements sera active dès que vous aurez effectué des changements.',
+  reset_changes_label: 'Réinitialisation des changements',
+  status_will_be_available_after_publishing_label:
+    "L'état du site Web sera disponible après la publication.",
+  resetting_your_changes_label: 'Réinitialisation de vos modifications',
+  website_has_been_successfully_reset:
+    'Notre site Web a été réinitialisé avec succès.',
+  publish_settings_label: 'Paramètres de publication',
+  logo_filter_black_label: 'Noir',
+  logo_filter_white_label: 'Blanc',
+  add_social_media_url_label: "Ajouter l'URL du réseau social",
+  paste_url_here_label: 'Collez votre URL ici',
+  add_an_icon_label: 'Ajouter une icône',
+  couldnt_find_any_matches_label:
+    "Désolé, nous n'avons pas trouvé de correspondance.",
+  reset_label: 'Réinitialiser',
+
+  marketing_integration_notification_message:
+    "%s Les intégrations marketing ne fonctionneront pas correctement pour les visiteurs qui refusent l'utilisation des cookies.",
+  enter_your_id: 'Entrez votre ID',
+  enter_your_property_id: 'Entrez votre ID de propriété',
+  enter_your_container_id: 'Entrez votre ID de conteneur',
+  enter_your_adsTxt_content: 'Entrez votre Ads.txt contenu',
+  google_tag_manager_tooltip_text:
+    'Google Tag Manager (GTM) vous permet de gérer et de déployer des balises marketing sur votre site Web pour suivre et collecter des données marketing. Trouvez ou configurez votre ID de conteneur GTM et ajoutez-le à votre site.',
+  facebook_pixel_tooltip_text:
+    'Le pixel Facebook est un extrait de code qui est placé sur un site Web pour collecter des données et suivre les activités des publicités Facebook. Vous pouvez créer un pixel Facebook dans votre compte Business Manager.',
+  website_name_description:
+    'Modifier le nom de votre site pour le retrouver facilement dans la liste Mes projets',
+  favicon_label: 'Favicône',
+  character_limit_error: 'Le nom ne doit pas comporter plus de %s caractères',
+
+  sitemap_button_text: 'Voir le plan du site',
+  there_are_no_domains_label: "Désolé, il n'y a pas de domaines",
+  ssl_popup_info_label:
+    'après avoir retiré le certificat, vous pouvez en ajouter un nouveau dans environ',
+  widget_settings_label: 'Paramètres des widgets',
+  please_enter_valid_message_link_label:
+    'Veuillez entrer un lien messenger valide',
+
+  expiry_time_label: "Heure d'expiration",
+  edit_cookie_settings_title: 'Modifier les paramètres des cookies',
+  start_creation_title: 'Commencez la création de votre %s !',
+  start_creation_title_tr1: 'site web de rêve !',
+  start_creation_sub_title: 'Comment voulez-vous procéder ?',
+  create_from_scratch_title: 'Créer à partir de zéro',
+  create_from_scratch_description:
+    'Créez votre site Web à partir de zéro en utilisant des composants modernes et conviviaux.',
+  start_with_templates_title: 'Commencez par le modèle',
+  start_with_templates_description:
+    "Choisissez l'un de nos superbes modèles et faites-en le vôtre.",
+  wonder_how_editor_works_label:
+    'Vous vous demandez comment fonctionne notre rédacteur en chef ?',
+  watch_a_tutorial_label: 'Regarder un tutoriel',
+  add_page_label: 'Ajouter une page',
+  type_a_page_name: 'Tapez un nom de page',
+  add_label: 'Ajouter',
+  add_row_label: 'Ajouter une rangée',
+  remove_row_label: 'Retirer la rangée',
+  page_settings_label: 'Paramètres de la page',
+  add_button_label: 'Ajouter un bouton',
+  add_video_link: 'Ajouter un lien vidéo',
+  replace_video_label: 'Remplacer la vidéo',
+  image_url_label: 'Image URL',
+  add_block_label: 'Ajouter un bloc',
+  add_tab_label: 'Ajouter un onglet',
+  create_video_label: 'Créer une vidéo',
+  add_item_label: 'Ajouter un article',
+  add_slide_label: 'Ajouter une diapositive',
+  add_music_label: 'Ajouter de la musique',
+  add_spotify_label: "Ajouter l'URL de Spotirfy",
+  add_soundcloud_label: "Ajouter l'URL de Soundcloud",
+  add_faq_label: 'Ajouter une FAQ',
+  invalid_url_label: 'Invalide %s url',
+  add_feature_label: 'Ajouter une fonction',
+  add_location_label: 'Ajouter un emplacement',
+  add_phone_label: 'Ajouter un téléphone',
+  add_email_label: "Ajouter l'email",
+  remove_block_label: 'Retirer le bloc',
+  google_play_label: 'Google play',
+  add_store_label: 'Ajouter une boutique',
+  add_contact_item_label: 'Ajouter un élément de contact',
+  add_input_box_label: 'Ajouter une boîte de saisie',
+  type_a_title_here_label: 'Tapez un titre ici',
+  this_field_is_required_label: 'Ce champ est obligatoire ',
+  choose_location_popup_label: 'Fenêtre popup Choisir un lieu',
+  search_on_Google_Maps_label: 'Recherche sur Google Maps',
+  save_cancel_buttons_label: 'Boutons Enregistrer Annuler',
+  mockup_components_label: 'Composants de la maquette',
+  transparency_label: 'Transparence',
+  enable_animation_label: "Activer l'animation",
+  disable_animation_label: "Désactiver l'animation",
+  close_label: 'Fermer',
+  delete_image_label: "Supprimer l'image",
+  delete_video_label: 'Supprimer la vidéo',
+  component_actions_label: 'Actions des composants',
+  flip_label: 'Retourner',
+  preview_to_see_changes_label: 'Aperçu pour voir les changements',
+  your_video_will_be_replace_label:
+    'Remarque : sur les appareils mobiles, votre vidéo sera remplacée par sa vignette..',
+  please_enter_valid_video_label: 'Veuillez entrer une URL vidéo valide',
+
+  path_name_label: 'Nom du chemin',
+  upload_from_device: "Télécharger à partir de l'appareil",
+  choose_an_image_label: 'Choisissez une image',
+  choose_a_video_label: 'Choisissez une vidéo',
+  connect_a_domain: 'Connecter un domaine',
+  your_website_will_be_saved:
+    'Votre site Web sera enregistré sur la page Mon projet',
+  domains_label: 'Domaines',
+  language_label: 'Langues',
+  your_website_will_be_published_with_free_subdomain_title:
+    'Votre site web sera publié avec un sous-domaine gratuit',
+  edit_your_free_subdomain_label:
+    'Modifiez votre sous-domaine gratuit Renderforest',
+  use_a_free_subdomain_label:
+    'Utilisez un sous-domaine gratuit de Renderforest',
+  take_your_website_to_next_level_label:
+    'Faites passer votre site Web au niveau supérieur !',
+  do_you_know_website_with_custom_domain_label:
+    'Savez-vous que les sites Web avec des domaines personnalisés sont faciles à trouver sur Google ? Mettez à niveau pour ajouter votre domaine personnalisé !',
+  publishing_label: 'Publication...',
+  get_the_best_subscribtion: 'Tirez le meilleur parti de votre abonnement',
+  connect_your_branded_domain_label:
+    'Connectez votre domaine de marque pour augmenter le trafic et la visibilité de votre site.',
+
+  add_this_component_label: 'Ajouter ce composant',
+  confirm_label: 'Confirmer',
+  preparing_for_preview_label: "Préparation de l'aperçu",
+  select_all_label: 'Sélectionner tout',
+  change_color_label: 'Changer de couleur',
+  upload_failed_label: "Échec de l'importation",
+  whats_the_web_address_label: "Quelle est l'adresse Web (URL)?",
+  video_url_label: 'URL de la Vidéo',
+  image_label: 'Image',
+  video_label: 'Vidéo',
+  logo_label: 'Logo',
+  social_label: 'Sociale',
+  link_label: 'Link',
+  soundCloudTrack_label: 'Piste Soundcloud',
+  spotifyTrack_label: 'Piste Spotify',
+  spotifyPlaylist_label: 'Spotify playlist',
+  add_logo_url: "Ajouter l'URL du %s",
+  remove_slide_label: 'Enlever la diapositive',
+  add_quote_label: 'Ajouter un devis',
+  add_paragraph_label: 'Ajouter un paragraphe',
+  add_list_label: 'Ajouter la liste',
+  add_step_label: 'Ajouter étape',
+  add_form_label: 'Ajouter formulaire',
+  add_blocks_label: 'Ajouter des blocs',
+  add_text_block_label: 'Ajouter un bloc texte',
+  add_photo_label: 'Ajouter photo',
+  previous_label: 'Précédent',
+  next_label: 'Prochain',
+  this_text_is_required_label: 'Ce texte est obligatoire',
+  saving_changes_label: 'Enregistrer la modification',
+
+  back_label: 'Retour',
+  animated_label: 'Animé',
+  deselect_label: 'Désélectionner',
+  one_component_selected_label: '%s composant sélectionné',
+  multiple_components_selected_label: '%s composants sélectionnés',
+  applying_the_template_label: 'Application du modèle',
+  news_title: 'Nous avons des NOUVELLES pour vous',
+  sorry_we_cant_use_symbols_label:
+    "Désolé, vous ne pouvez pas utiliser les symboles ! @ # $ % ^ & * ' / ( ) , . ? “ : ; { } | < > ",
+  sorry_we_cant_use_label:
+    "Désolé, vous ne pouvez pas utiliser ! @ # $ % ^ & * ' / ( ) , ? “ : ; { } | < >.",
+  slides_label: 'Diapositives',
+  customize_the_slides_label: 'Personnalisez les diapositives',
+  this_section_willnot_be_in_preview_label:
+    'Cette section ne sera pas visible en mode aperçu.',
+  want_to_creat_subdomain_label: 'Voulez-vous créer un sous-domaine ?',
+  to_redirect_from_your_root_domain_label:
+    'Pour rediriger depuis votre domaine racine vers le sous-domaine WWW, vous devez avoir un enregistrement DNS  (A record ou CNAME) pour %s et %s',
+  www_option_tooltip_text:
+    'Pour rediriger votre domaine racine vers le sous-domaine WWW, veuillez créer %s records appropriés pour votre DNS.',
+  bold_tooltip_text: 'Gras',
+  italic_tooltip_text: 'Italique',
+  underline_tooltip_text: 'Souligné',
+  link_settings_tooltip_text: 'Paramètres des liens',
+  delete_link_tooltip_text: 'Supprimer le lien',
+  gradient_tooltip_text: 'Pente',
+  is_no_longer_premium_title: "Oups, votre site web n'est plus premium",
+  is_no_longer_premium_text:
+    'Mettez à niveau et procéder avec le %s avec des fonctions premium ou continuer avec un site web gratuit au risque de perdre toutes les données et avantages premium.',
+  premium_website: 'Site web premium',
+  continue_for_free: 'Continuer gratuitement',
+  is_no_longer_popup_note:
+    '%s Si vous continuez gratuitement, votre site web publié ne sera plus disponible. Vous pouvez publier pour le faire revivre.',
+  your_website_languages: 'Les langues de votre site web',
+  primary_language_label: 'Langue primaire',
+  secondary_languages_label: 'Langues secondaires',
+  hidden_language_tooltip_text:
+    'Cette langue est masquée. Pour la rendre à nouveau visible, veuillez la désactiver dans les paramètres du site.',
+  languages_label: 'Langues',
+  localize_your_website_label:
+    'Localisez votre site Web dans plusieurs langues en quelques clics seulement.',
+  website_languages_label: 'Langues du site web',
+  website_language_label: 'Langue du site web',
+  website_languages_tooltip_text:
+    "Un sélecteur de langue apparaîtra dans l'en-tête de votre site Web une fois que vous aurez sélectionné une langue principale et au moins une autre langue pour votre site Web. Vous pouvez modifier le contenu de chaque langue dans l'éditeur.",
+  languages_menu_settings_control_tooltip_text: 'Paramètres du menu',
+  languages_menu_settings_flyout_title: 'Présentation du menu',
+  language_display_layout: 'Affichage de la langue',
+  full_name_label: 'Nom complet',
+  texts_only_label: 'Textes seulement',
+  flags_only_label: 'Drapeaux seulement',
+  primary_language_description:
+    'Sélectionnez la langue actuelle de votre site web',
+  primary_language_description_already_multilingual:
+    "Il s'agit de la langue principale de votre site Web, elle sera affichée en haut de la liste déroulante des langues.",
+  secondary_languages_description:
+    'Ajouter au moins une langue secondaire pour rendre votre site multilingue',
+  primary_label: 'Primaire',
+  set_primary_label: 'Définir le primaire',
+  visible_label: 'Visible',
+  hidden_label: 'Caché',
+  restore_label: 'Restaurer',
+  add_language_label: 'Ajouter une langue',
+  hidden_language_message:
+    'O idioma %s ficará oculto no seu site, mas ainda está disponível no editor. Quando você terminar as configurações, basta torná-lo visível e publicar seu site.',
+  drag_to_move_label: 'Faites glisser pour déplacer',
+  primary_language_change_confirm_label:
+    'Vous voulez définir %s comme langue principale ?',
+  primary_language_change_confirm_description:
+    'Tous les contenus et pages liés à %s deviendront primaires.',
+  change_label: 'CHANGER',
+  are_you_sure_save_changes_label:
+    'Êtes-vous sûr de vouloir enregistrer les changements ?',
+  deleted_language_message:
+    'Les %s du menu des langues et tous les contenus et pages associés seront définitivement supprimés.',
+  deleted_language_message_tr1: 'les langues retirées seront supprimées',
+  deleted_last_language_message:
+    'Votre site Web sera %s, et les langues secondaires seront définitivement supprimées avec tout le contenu et les pages associés.',
+  deleted_last_language_message_tr1: 'ne plus être multilingue',
+  your_website_is_multilingual_now_label:
+    'Votre site web est maintenant multilingue',
+  you_can_edit_and_translate_label:
+    "Nous avons dupliqué toutes les pages dont le contenu correspond à la langue principale. Vous pouvez les modifier et les traduire dans l'éditeur.",
+  upgrade_to_make_multilingual_label:
+    'Mettre à niveau pour rendre votre site web multilingue',
+  select_from_list_label: 'Sélectionner dans la liste',
+  choose_a_language_label: 'Choisir une langue',
+  dropdown_no_results_found_message: 'Désolé, aucun résultat trouvé pour /%s/',
+  language_label_lowercase: 'langue',
+  add_collage_label: 'Ajouter collage',
+
+  enter_a_topic_and_get_keywords_list:
+    'Saisissez un sujet et obtenez une liste des meilleurs mots-clés pour vous.',
+  get_keyword: 'Obtenir un mot-clé',
+  unpin_from_editor: "Déplacer de l'éditeur",
+  pin_to_editor: "Épingler à l'éditeur",
+  semrush_keyword_magic_tool_title: 'Semrush keyword magic tool',
+  keyword_label: 'Keyword',
+  enter_a_keyword_label: 'Enter a keyword',
+  examples_label: 'Examples',
+  searching_label: 'Searching...',
+  you_have_reached_your_daily_limit_label: 'You have reached the daily limit',
+  semrush_keywords_noresults_label:
+    "We couldn't find any data related to your request",
+  keyword_magic_tool_label: 'Keyword magic tool',
+  top_related_keywords_label: 'Top related keywords',
+  more_details_label: 'More details',
+  semrush_sidebar_initial_view_text:
+    'Search for any keyword and get a list of the best results!',
+  paypal_settings_title: 'Paramètres de PayPal',
+  paypal_email_address_label: 'Adresse e-mail PayPal *',
+  button_type_label: 'Type de bouton',
+  button_title_label: 'Titre du bouton *',
+  selling_label: 'Vente',
+  donating_label: 'Donation',
+  select_the_button_color_label: 'Sélectionnez la couleur du bouton',
+  paypal_colors_label: 'Couleurs PayPal',
+  product_name_label: 'Nom du produit *',
+  product_id_label: 'ID du produit',
+  product_price_label: 'Prix du produit *',
+  currency_label: 'Monnaie',
+  product_old_price_label: 'Ancien prix du produit',
+  shipping_fee_label: "Frais d'expédition",
+  headline_label: 'A la une',
+  organization_name_label: "Nom de l'organisation",
+  donation_id: 'ID du don',
+  amount_label: 'Montant *',
+  let_customers_set_their_own_amount_label:
+    'Laisser les clients fixer leur propre montant',
+  organization_label: 'Organisation',
+  type_an_impressive_headline_label: 'Tapez un titre impressionnant',
+  please_enter_a_valid_email: 'Veuillez entrer une adresse e-mail valide',
+  multilingual_website_label: 'Site %s',
+  multilingual_website_label_tr1: 'multilingue',
+  add_play_button_label: 'Ajouter un bouton play',
+  event_settings: "Paramètres de l'événement",
+  event_label: 'Événement',
+  event_creation_title: 'Commençons à créer votre premier événement !',
+  event_creation_subtitle: 'Il vous suffit de quelques étapes',
+  event_creation_step1: 'Ajouter un composant RSVP',
+  event_creation_step2: "Définissez les détails de l'événement",
+  event_creation_step3: 'Partagez-le avec vos invités',
+  create_today_label: "Créez aujourd'hui",
+  event_rsvp_label: 'Événement RSVP',
+  event_rsvp_comp_category_description:
+    'Prêt à faire la fête ? Invitez vos invités à votre événement avec ces éléments RSVP.',
+  event_details_label: 'Détails',
+  event_popups_label: 'Pop-ups',
+  event_forms_label: 'Formes',
+  event_settings_label: 'Paramètres',
+  event_guest_list_label: 'Liste des invités',
+  event_translation_label: 'Traduction',
+  download_label: 'Télécharger',
+  download_csv_popup_title: 'Télécharger le fichier CSV',
+  download_csv_popup_description:
+    'Des personnes ont répondu à votre événement à partir de différentes langues de sites web. Sélectionnez celle que vous souhaitez télécharger.',
+  guests_count_label: '%s invités',
+  event_settings_subtitle:
+    "Vous pouvez y gérer les paramètres de votre événement, en définir l'état, etc.",
+  registration_status_title: "Statut d'enregistrements",
+  registration_status_subtitle:
+    "Décidez si l'inscription à votre événement est ouverte ou fermée.",
+  open_label: 'Ouverte',
+  email_notifications_title: "Notifications d'email",
+  email_notifications_subtitle:
+    'Choisissez si vous souhaitez recevoir des notifications par réponse à un événement.',
+  event_notifications_allowed_label: 'Oui, je veux',
+  event_notifications_disallowed_label: 'Non, je ne veux pas',
+  guest_number_label: "Combien d'invités peuvent être présents ?",
+  delete_event_title: 'Supprimer un événement',
+  delete_event_subtitle:
+    'Supprimer définitivement votre événement et toutes les données qui y sont associées. ',
+  yes_label: 'Oui',
+  registration_closed_label: 'Inscription clôturée',
+  yes_description:
+    "Ce message sera affiché aux personnes qui ont accepté l'invitation.",
+  no_description:
+    "Ce message sera affiché aux personnes qui ont décliné l'invitation.",
+  add_a_button_to_create_a_calendar_event:
+    'Ajouter un bouton pour créer un événement au calendrier',
+  paragraph_label: 'Paragraphe',
+  registration_popups_title: "Fenêtres pop-up d'inscription",
+  registration_popups_subtitle:
+    "Des fenêtres pop-up d'inscription s'afficheront lorsque vos invités soumettront leurs réponses.",
+  event_details_title: "Détails de l'événement",
+  event_details_subtitle:
+    "Les détails de l'événement sont où vous fournissez toutes les informations nécessaires sur l'événement à vos participants.",
+  event_forms_subtitle:
+    "Personnalisez le formulaire d'inscription et ajoutez des champs, des cases à cocher, etc.",
+  time_zone_label: 'Fuseau horaire',
+  date_label: 'Date',
+  time_label: 'Heure',
+  add_end_date_label: 'Ajouter une date de fin',
+  name_of_the_venue_label: 'Nom du lieu',
+  address_on_the_map_label: 'Adresse sur la carte',
+  rsvp_button_title: 'Titre du bouton RSVP',
+  rsvp_option_label: 'Option RSVP',
+  contact_form_title: 'Formulaire de contact',
+  first_name_input_title_label: 'Titre de la saisie du prénom',
+  last_name_input_title_label: "Titre de l'entrée du nom de famille",
+  email_input_title_label: "Titre de l'entrée de l'email",
+  add_phone_number_label: 'Ajouter un numéro de téléphone',
+  phone_number_input_title_label: "Titre de l'entrée du numéro de téléphone",
+  make_phone_required_label: 'Faire le numéro de téléphone requis',
+  make_this__field_required_label: 'Rendez ce champ obligatoire',
+  additional_guest_option_label: 'Option invité supplémentaire',
+  max_guests_label: "Nombre maximal d'invités",
+  link_button_title: 'Titre du bouton de lien',
+  additional_fields_tooltip:
+    "Cette section permet à votre invité d'écrire des informations supplémentaires.",
+  add_field_label: '+ Ajouter une question',
+  question_title_label: 'Titre de la question',
+  response_type_label: 'Type de réponse',
+  answer_label: 'Réponse %s',
+  enter_a_question_text: 'Saisissez une question',
+  additional_field_label: 'Champ supplémentaire %s',
+  add_answer_label: '+ Ajouter une réponse',
+  enter_a_answer_text: 'Saisissez une réponse',
+  event_text_input_label: 'Saisie de texte',
+  event_checkbox_label: 'Case à cocher (choix multiple)',
+  event_radio_label: 'Bouton radio (choix unique)',
+  add_card_cover_image_label: "Ajouter une carte au dessus de l'image",
+  yes_title_label: "'Titre 'Oui'",
+  yes_paragraph_label: "Paragraphe 'Oui'",
+  yes_button_label: "Paragraphe 'Oui'",
+  no_title_label: "Titre 'Non'",
+  no_paragraph_label: "Paragraphe 'Non'",
+  closed_title_label: "'Titre 'Enregistrement fermé'",
+  closed_paragraph_label: "Paragraphe 'Inscription close'",
+  rsvp_option_title: "Titre de l'option RSVP",
+  first_name_label: 'Prénom',
+  last_name_label: 'Nom de famille',
+  email_label: 'Email',
+  phone_label: 'Téléphone',
+  link_button_label: 'Bouton de lien',
+  submit_button_title: 'Bouton de soumission',
+  submit_button_label: 'Titre du bouton de soumission',
+  your_text_label: 'Votre texte',
+  make_required_label: 'Faire le nécessaire',
+  remove_required_label: 'Enlever le nécessaire',
+  no_rsvp_component_message:
+    'Votre site Web %s ne contient pas de %s. Vous pouvez en ajouter un à partir de la liste des composants',
+  rsvp_component_label: 'Composant RSVP',
+  event_settings_notifications_tooltip:
+    "Si vous ne l'avez pas encore fait, vous pouvez ajouter votre adresse électronique dans les paramètres du site Web.",
+  event_settings_registration_tooltip:
+    "La limite d'inscription comprend à la fois les soumissions 'oui' et 'non'.",
+  rsvp_option_tooltip:
+    "Cette section permet à vos invités de choisir s'ils viennent ou non. Lorsque cette option est désactivée, toutes les réponses sont automatiquement considérées comme 'Oui'.",
+  contact_form_tooltip:
+    'Cette section permet à votre invité de fournir ses coordonnées.',
+  additional_guest_option_tooltip:
+    "Cette section permet à votre invité d'ajouter des invités supplémentaires.",
+  additional_question_tooltip:
+    'This section allows your guest to provide additional information.',
+  delete_event_message_label:
+    'Veuillez publier votre site web pour voir tous les changements.',
+  manage_form_tooltip: 'Gérer le formulaire',
+  additional_questions_label: 'Questions complémentaires',
+  question_label: 'Question supplémentaire %s',
+  registration_limit_subtitle: 'Fixer le nombre maximum de demandes de RSVP.',
+  remove_guest_label: 'Supprimez l’invité',
+  lang_label: 'Langues.',
+  rsvp_label: 'RSVP',
+  actions_label: 'Actions',
+  contacts_label: 'Contacts',
+  additional_guests_label: 'Invités supplémentaires',
+  more_information_label: "Plus d'informations",
+  add_guest_label: 'Ajouter un invité',
+  download_csv_label: 'Télécharger le CSV',
+  search_name_label: 'Nom de la recherche',
+  all_guests_label: 'Tous les invités',
+  all_languages_label: 'Toutes les langues',
+  guest_list_upgrade_text: 'Vous voulez voir la liste complète des invités ?',
+  no_guests_yet_label: "Pas encore d'invités",
+  no_guest_search_result_text: "Désolé, aucun résultat n'a été trouvé pour %s",
+  no_guest_search_result_limitation_text:
+    "Désolé, aucun résultat n'a été trouvé parmi %s invités pour %s",
+  no_guest_filter_result_text:
+    "Désolé, aucun résultat n'a été trouvé avec le filtre appliqué",
+  no_guest_filter_result_limitation_text:
+    "Désolé, aucun résultat n'a été trouvé parmi %s invités avec le filtre appliqué.",
+  event_guest_list_subtitle:
+    'Ici, vous pouvez trouver des informations sur les personnes qui ont répondu à votre événement.',
+  add_guest_details_label: "Ajouter les coordonnées de l'invité",
+  guest_details_label: "Détails de l'invité",
+  additional_guest_label: 'Invité supplémentaire',
+  additional_information_label: 'Informations complémentaires',
+  edit_guest_response_label: "Modifier la réponse de l'invité",
+  enter_guest_name_placeholder: "Saisir le nom de l'invité",
+  enter_guest_lastname_placeholder: "Saisir le nom de famille de l'invité",
+  enter_guest_email_placeholder: "Saisir l'adresse e-mail de l'invité",
+  enter_guest_phone_number_placeholder:
+    "Saisir le numéro de téléphone de l'invité",
+  enter_answer_placeholder: 'Saisir la réponse',
+  please_publish_your_website_to_add_guests:
+    'Merci de publier votre site web pour ajouter des invités.',
+  delete_event_confirmation_title:
+    'Es-tu sûr de vouloir supprimer ton événement ?',
+  delete_event_warning_text:
+    'Vos événements %s, %s et %s seront définitivement supprimés.',
+  details_lowercase_label: 'détails',
+  guest_list_lowercase_label: 'liste des invités',
+  business_plan_label: 'Business',
+  rsvp_submissions_count_label: '%s RSVP submissions',
+  unlimited_uhd_video_label: '%s vidéos UHD 4k',
+  unlimited_graphics_label: '%s graphiques de haute qualité',
+  branding_guideline_label: 'Marque %s',
+  guideline_label: 'Guide',
+  reseller_license_label: 'Revendeur %',
+  license_label: 'licence',
+  question_label: 'Question %s',
+  additional_questions_tooltip:
+    "Cette section permet à l'invité de fournir des informations supplémentaires.",
+  registration_limit_label: "Limite d'inscription",
+  delete_event_message_label:
+    'Votre événement sera toujours visible sur votre site web si vous ne le publiez pas.',
+  event_settings_upgrade_title: 'Vous voulez inviter plus d’invités ?',
+  event_settings_upgrade_subtitle: 'Aller au-delà des limites',
+  event_translation_subtitle:
+    'C’est là que vous pouvez traduire le contenu de votre événement en plusieurs langues.',
+  no_additional_guests: 'Pas d’invités supplémentaires',
+  no_information: 'Pas d’information',
+  please_enter_a_valid_name:
+    'Le nom est trop long ou comporte des symboles non valides',
+  please_enter_a_valid_last_name:
+    'Le nom de famille est trop long ou comporte des symboles invalide',
+  invite_unlimited_guests_title: 'Invitez un nombre illimité d’invités',
+  invite_unlimited_guests_text: 'Et profitez d’autres avantages',
+  yandex_metrica_input_label: 'Saisissez votre numéro tag',
+  yandex_metrica_tooltip_text:
+    "%s vous permet de suivre et d'analyser le comportement des visiteurs de votre site web. Trouvez ou créez un numéro de tag dans votre compte %s et ajoutez-le ici pour commencer.",
+  clear_all_label: 'Effacer tout',
+  translate_from_label: 'Traduire de',
+  background_style_label: 'Style d’arrière plan',
+  edit_details_label: 'Modifier les détails',
+  edit_forms_label: 'Modifier les formulaires',
+  envelope_style_label: 'Style d’enveloppe',
+  registration_closed_description: `Ce message s'affiche lorsqu'il n'y a plus de places disponibles ou lorsque vous avez fermé manuellement l'inscription à partir de l'onglet "Paramètres".`,
+  show_time_zone_label: 'Afficher le fuseau horaire',
+  confirmation_email_title: 'Courriel de confirmation',
+  confirmation_email_subtitle:
+    "Envoyez un e-mail automatisé aux invités qui ont accepté l'invitation",
+  email_upgrade_banner_title:
+    'Vous souhaitez envoyer des e-mails personnalisés à vos invités ?',
+  email_upgrade_banner_paragraph: 'Upgrade to send an automated emails',
+  email_settings_title: "Paramètres de l'email",
+  email_settings_subtitle:
+    "Personnalisez le nom de l'expéditeur de votre e-mail et ajoutez une adresse e-mail de réponse",
+  sender_name_label: "Nom de l'expéditeur",
+  sender_name_description:
+    "Ce nom apparaît dans la boîte de réception du destinataire et permet de reconnaître l'expéditeur",
+  reply_to_email_label: 'Courriel de réponse',
+  reply_to_email_description:
+    "Il s'agit de l'e-mail que vos invités utiliseront pour vous répondre.",
+  email_subject_label: "Objet de l'e-mail",
+  greeting_label: "Message d'accueil",
+  regret_email_title: 'Email de regret',
+  regret_email_subtitle:
+    "Envoyer un email automatique aux invités qui ont décliné l'invitation",
+  text_wizard_ai: 'Text Wizard AI',
+  add_scrolling_text_label: 'Ajouter un texte défilant',
+  unlimited_wizard_usages: "Utilisation %s de l'assistant IA",
+  make_multilingual_label: 'Rendre multilingue',
+  go_global_go_multilingual_label: 'Soyez mondial, soyez %s !',
+  go_global_go_multilingual_label_tr1: 'multilingue',
+  expand_your_audience_by_translating_your_event_label:
+    'Élargissez votre audience en traduisant votre événement',
+  set_up_the_languages_of_your_website:
+    'Configurez les langues de votre site web',
+  go_multilingual_description:
+    'Passez au multilinguisme en quelques clics et traduisez votre événement',
+  go_multilingual_label: 'Passez au multilingue'
+}
